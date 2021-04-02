@@ -30,5 +30,15 @@ const Validation = () => {
         console.log("Email invalid please input proper way");
         return false;
     }
+
+    let phnum = readeline.question("Enter the phone numner: ");
+    let phnumReg = /^[0-99]{2}[0-9]{10}/;
+    if (phnumReg.test(phnum) == true){
+        console.log("Valid phone number");
+    }
+    else{
+        console.log("Phone number invalid please input proper way");
+        return false;
+    }
 }
 Validation();

@@ -60,5 +60,15 @@ const Validation = () => {
         console.log("password invalid please input proper way");
         return false;
     }
+    
+let pswd3 = readeline.question("Enter the password(min:8 char): ");
+    let pswd3Reg = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])/;
+    if (pswd3Reg.test(pswd3) == true){
+        console.log("Valid password");
+    }
+    else{
+        console.log("password invalid please input proper way");
+        return false;
+    }
 }
 Validation();

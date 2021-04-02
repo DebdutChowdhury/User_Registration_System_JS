@@ -10,5 +10,15 @@ const Validation = () => {
         console.log("Firstname invalid please input proper way");
         return false;
     }
+
+    let lname = readeline.question("Enter the last name: ");
+    let lnameReg = /[A-Z]+([ '-][a-zA-Z]+)*/
+    if (lnameReg.test(lname) == true){
+        console.log("Valid Last name");
+    }
+    else{
+        console.log("Lastname invalid please input proper way");
+        return false;
+    }
 }
 Validation();

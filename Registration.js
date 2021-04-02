@@ -20,5 +20,15 @@ const Validation = () => {
         console.log("Lastname invalid please input proper way");
         return false;
     }
+
+    let email = readeline.question("Enter the email: ");
+    let emailReg = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+    if (emailReg.test(email) == true){
+        console.log("Valid Email");
+    }
+    else{
+        console.log("Email invalid please input proper way");
+        return false;
+    }
 }
 Validation();

@@ -1,0 +1,25 @@
+{
+  "name": "user_registration_system_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Registration.js",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DebdutChowdhury/User_Registration_System_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DebdutChowdhury/User_Registration_System_JS/issues"
+  },
+  "homepage": "https://github.com/DebdutChowdhury/User_Registration_System_JS#readme"
+}

@@ -4,11 +4,11 @@ module.exports={
         var patt = new RegExp(regPattern);
         var res = patt.test(string);
         if(res == true){
-            console.log("validated output");
+            // console.log("validated output");
             return true;
         }
         else{
-            console.log("please enter the valid input");
+            // console.log("please enter the valid input");
             return false;
         }
     }

@@ -8,9 +8,11 @@
     "mocha": "^8.3.2",
     "readline-sync": "^1.4.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nyc": "^15.1.0"
+  },
   "scripts": {
-    "test": "mocha || true"
+    "test": "nyc --reporter=text mocha"
   },
   "repository": {
     "type": "git",
